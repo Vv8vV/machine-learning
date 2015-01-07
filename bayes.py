@@ -137,11 +137,11 @@ def localWords(feed1,feed0):
 	for i in range(minLen):
 		wordList = textParse(feed1['entries'][i]['summary'])
 		docList.append(wordList)
-		fullText.extend(wordList]
+		fullText.extend(wordList)
 		classList.append(1)
 		wordList = textParse(feed0['entries'][i]['summary'])
 		docList.append(wordList)
-		fullText.extend(wordList]
+		fullText.extend(wordList)
 		classList.append(0)
 	vocabList = createVocabList(docList)
 	top30Words = calcMostFreq( vocabList, fullText)
